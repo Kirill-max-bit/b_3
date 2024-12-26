@@ -1,33 +1,40 @@
 def calculate_expression(a):
     return 2 * a['x'] + 2 * a['y']
 
+
 def check_condition_or(x, y):
     return (x == 2) or (y ** 2 == 4)
+
 
 def check_condition_and(x, y):
     return (x == 0) and (y ** 2 == 4)
 
+
 def check_multiplication_and_greater_than(x, y):
     return (x * y == 4) and (y > x)
+
 
 def check_multiplication_or_less_than(x, y):
     return (x * y == 0) or (y < x)
 
+
 def check_not_multiplication_and_greater_than(x, y):
     return (not (x * y < 1)) and (y > x)
+
 
 def check_not_multiplication_or_greater_than(x, y):
     return (not (x * y < 0)) or (y > x)
 
 
 data = [
-    {'x': 1, 'y': 1},  
-    {'x': 2, 'y': 2},  
-    {'x': 1, 'y': 2},  
-    {'x': 2, 'y': 1},  
+    {'x': 1, 'y': 1}  
+    {'x': 2, 'y': 2},
     {'x': 1, 'y': 2},
+    {'x': 2, 'y': 1}, 
+    {'x': 1, 'y': 2},  
     {'x': 2, 'y': 1}   
 ]
+
 
 results = []
 for i, d in enumerate(data):

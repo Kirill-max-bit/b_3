@@ -7,6 +7,7 @@ def compute_expressions(A, B):
     c = B and not (A and not B)
     return a, b, c
 
+
 for A, B in num:
     a, b, c = compute_expressions(A, B)
     print(f"А={A}, B={B}:")

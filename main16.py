@@ -1,10 +1,12 @@
 num = [(True, True), (True, False), (False, True), (False, False)]
 
+
 def compute_expressions(X, Y):
     a = not X and not Y
     b = X or (not X and Y)
     c = (not X and Y) or Y
     return a, b, c
+
 
 for X, Y in num:
     a, b, c = compute_expressions(X, Y)
