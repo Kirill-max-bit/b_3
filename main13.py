@@ -1,7 +1,7 @@
-# Возможные комбинации значений А и В
+
 num = [(True, True), (True, False), (False, True), (False, False)]
 
-# Функция для вычисления каждого выражения
+
 def compute_expressions(A, B):
     a = not (A and B)
     b = not A or B
@@ -9,7 +9,7 @@ def compute_expressions(A, B):
     
     return a, b, c
 
-# Перебор всех комбинаций и вывод результатов
+
 for A, B in num:
     a, b, c = compute_expressions(A, B)
     print(f"А={A}, B={B}:")

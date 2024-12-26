@@ -4,7 +4,6 @@ def compute_expressions(X, Y):
     a = not X and not Y
     b = X or (not X and Y)
     c = (not X and Y) or Y
-    
     return a, b, c
 
 for X, Y in num:
@@ -13,5 +12,3 @@ for X, Y in num:
     print(f"\ta) не X и не Y = {a}")
     print(f"\tb) X или (не X и Y) = {b}")
     print(f"\tc) (не X и Y) или Y = {c}")
-    print()
-    

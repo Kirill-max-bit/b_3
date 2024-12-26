@@ -19,17 +19,16 @@ def check_not_multiplication_and_greater_than(x, y):
 def check_not_multiplication_or_greater_than(x, y):
     return (not (x * y < 0)) or (y > x)
 
-# Данные для вычислений
+
 data = [
-    {'x': 1, 'y': 1},  # Для пункта а)
-    {'x': 2, 'y': 2},  # Для пунктов б) и в)
-    {'x': 1, 'y': 2},  # Для пункта г)
-    {'x': 2, 'y': 1},  # Для пункта д)
-    {'x': 1, 'y': 2},  # Для пункта е)
-    {'x': 2, 'y': 1}   # Для пункта ж)
+    {'x': 1, 'y': 1},  
+    {'x': 2, 'y': 2},  
+    {'x': 1, 'y': 2},  
+    {'x': 2, 'y': 1},  
+    {'x': 1, 'y': 2},
+    {'x': 2, 'y': 1}   
 ]
 
-# Вычисления
 results = []
 for i, d in enumerate(data):
     if i == 0:
@@ -46,7 +45,6 @@ for i, d in enumerate(data):
     else:
         results.append(check_not_multiplication_or_greater_than(d['x'], d['y']))
 
-# Вывод результатов
 print("а):", results[0])
 print("б):", results[1])
 print("в):", results[2])

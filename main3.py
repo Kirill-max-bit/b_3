@@ -13,4 +13,3 @@ print(f"б) {result_b}")
 # в) А и B или C
 result_c = (A and B) or C
 print(f"в) {result_c}")
-

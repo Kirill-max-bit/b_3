@@ -5,7 +5,6 @@ def compute_expressions(A, B):
     a = (not A and not B) or A
     b = B or (not A and not B)
     c = B and not (A and not B)
-    
     return a, b, c
 
 for A, B in num:
