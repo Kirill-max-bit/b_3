@@ -102,4 +102,3 @@ if __name__ == "__main__":
 
     result = can_move_and_safe('king', 'rook', a, b, c, d, e, f)
     print(f'Король и ладья: {result}')
-    
