@@ -14,9 +14,9 @@ print("-" * 50)
 
 for A, B, C in combinations:
     print(f"{A=}\t{B=}\t{C=}", end="\t|\t")
-    
+
     for expression in expressions:
         result = eval(expression)
         print(result, end="\t")
-    
+
     print()

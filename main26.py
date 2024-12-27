@@ -19,9 +19,9 @@ expressions = [
 
 for X, Y, Z in combinations:
     print(f"X={X}, Y={Y}, Z={Z}")
-    
+
     for expression in expressions:
         result = eval(expression)
         print(f"{expression} -> {result}")
-    
+
     print()

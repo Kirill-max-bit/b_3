@@ -3,9 +3,9 @@ def evaluate_expression(expression, X, Y, Z):
 
 
 num = [
-    "not (Y or not X and Z) or Z",   
-    "X and not (not Y or Z) or Y",  
-    "not (X or Y and Z) or not X"   
+    "not (Y or not X and Z) or Z",
+    "X and not (not Y or Z) or Y",
+    "not (X or Y and Z) or not X"
 ]
 
 
@@ -17,4 +17,3 @@ for X in [True, False]:
                 result = evaluate_expression(expression, X, Y, Z)
                 print(f"{expression} -> {result}")
                 print()
-
